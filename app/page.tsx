@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className={styles.footer}>
+      <div className={styles.footer}>
         <table>
           <thead>
             <tr>
@@ -84,7 +84,7 @@ export default function Home() {
             </tr>
           </tbody>
         </table>
-      </div> */}
+      </div>
     </div>
   );
 }
