@@ -1,0 +1,53 @@
+@import "./main.scss";
+
+.page{
+    .pageHeader{
+        height: 60px;
+        width: 100%;
+        background-color: $color-secondary;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        
+        img{
+            width:fit-content;
+            height: auto;
+        }
+    }
+
+    .pageTopbar{
+        height: 150px;
+        width: 100%;
+        background-color: $color-primary;
+        display: flex;
+        
+        &__imagen{
+            width: 35%;
+        }
+
+        &__title{
+            width: 65%;
+            background-color: $color-tertiary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            h4{
+                font-size: $font_med;
+                color: $text-color-secondary;
+            }
+        }
+    }
+
+    .pageContent{
+        display: flex;
+
+        &__left{
+            width: 30%;
+        }
+
+        &__right{
+            width: 70%;
+        }
+    }
+}
