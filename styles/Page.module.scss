@@ -1,53 +1,135 @@
 @import "./main.scss";
 
-.page{
-    .pageHeader{
+.page {
+    margin: 0px;
+
+    .pageHeader {
         height: 60px;
         width: 100%;
         background-color: $color-secondary;
         position: relative;
         display: flex;
         justify-content: flex-start;
-        
-        img{
-            width:fit-content;
+        padding: 5px;
+
+        img {
+            width: fit-content;
             height: auto;
+            margin-left: 20px
         }
     }
 
-    .pageTopbar{
+    .pageTopbar {
         height: 150px;
         width: 100%;
         background-color: $color-primary;
         display: flex;
-        
-        &__imagen{
-            width: 35%;
+        box-shadow: -1px 2px 13px #888888;
+
+        &__imagen {
+            width: 33.3%;
+            padding: 30px 0px;
+            box-shadow: 4px 0px 4px #888888;
+
+            img {
+                vertical-align: middle;
+            }
         }
 
-        &__title{
-            width: 65%;
+        &__title {
+            width: 66.6%;
             background-color: $color-tertiary;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            h4{
-                font-size: $font_med;
-                color: $text-color-secondary;
+            padding: 20px 15px 10px;
+            text-align: center;
+            text-align: center;
+            background-image: linear-gradient(91deg, #090C0D 0%, #31312F 100%);
+
+            .titlecontent {
+                padding-top: 40px;
+
+                h4 {
+                    font-size: $font_med;
+                    color: $text-color-light;
+                    font-family: "Montserrat-Bold";
+                }
             }
+
         }
     }
 
-    .pageContent{
+    .pageContent {
         display: flex;
+        margin: 0px;
+        margin-top: 30px;
 
-        &__left{
-            width: 30%;
+        &__left {
+            width: 41.6666666667%;
+            border-right: 2px solid #C8CFCD;
+
+            .item {
+                display: block;
+                background: white;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 10px;
+
+                .label {
+                    font-family: "Montserrat-Bold";
+                    font-size: $font-sm;
+                    color: $text-color;
+                    margin: 0px;
+                }
+
+                p {
+                    font-weight: 900;
+                    color: #004750;
+                    font-size: 1rem;
+                    font-family: "Montserrat-Black";
+                    margin: 0px;
+                }
+            }
         }
 
-        &__right{
-            width: 70%;
+        &__right {
+            width: 58.3333333333%;
+            flex: 0 0 auto;
+            padding-left: 12px;
+
+            .title {
+                font-weight: 900;
+                color: $color-secondary;
+                font-size: 1rem;
+
+                p {
+                    font-family: "Montserrat-Black";
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    color: $text-color
+                }
+            }
+
+            .content {
+                .contentlabel {
+                    font-family: "Montserrat-Bold";
+                    color: $text-color-secondary;
+                }
+
+                p {
+                    font-weight: bold;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    font-family: "Montserrat-Black";
+                }
+
+                .contenttext {
+                    margin-top: 0px;
+                    font-weight: 900;
+                    color: #004750;
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
         }
     }
 }

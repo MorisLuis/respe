@@ -19,45 +19,55 @@ export default function Home() {
 
       <div className={styles.pageTopbar}>
         <div className={styles.pageTopbar__imagen}>
-        <Image
-          src={trabajo}
-          alt={'Imagen Land Page'}
-          priority
-          quality={100}
-          layout="intrinsic"
-        />
+          <Image
+            src={trabajo}
+            alt={'Imagen Land Page'}
+            priority
+            quality={100}
+            layout="intrinsic"
+          />
         </div>
+
         <div className={styles.pageTopbar__title}>
-          <h4>Determinación de solicitud de registro</h4>
+          <div className={styles.titlecontent}>
+
+            <h4>Determinación de solicitud de registro</h4>
+          </div>
+
         </div>
       </div>
 
       <div className={styles.pageContent}>
         <div className={styles.pageContent__left}>
-          <div>
-            <label htmlFor="Razón social">Razón social</label>
+          <div className={styles.item}>
+            <p className={styles.label}>Razón social</p>
             <p>MARIZA HERNÁNDEZ LUCIO</p>
           </div>
 
-          <div>
-            <label htmlFor="Fecha de respuesta:">Fecha de respuesta:</label>
+          <div className={styles.item}>
+            <p className={styles.label}>Fecha de respuesta:</p>
             <p>2024-08-02</p>
           </div>
 
-          <div>
-            <label htmlFor="Razón social">Formato:</label>
+          <div className={styles.item}>
+            <p className={styles.label}>Formato:</p>
             <p>STPS/UTD/DGIFT/ARR/17819/2024</p>
           </div>
         </div>
 
         <div className={styles.pageContent__right}>
-          <h3>AVISO DE RENOVACIóN DE REGISTRO</h3>
-          <p>Fundamento de la respuesta:</p>
-          <p>DÉCIMO, DÉCIMO SEGUNDO, DÉCIMO TERCERO, DÉCIMO QUINTO-B, DÉCIMO QUINTO-C y DÉCIMO NOVENO del ACUERDO POR EL QUE SE DAN A CONOCER LAS DISPOSIONES DE CARÁCTER GENERAL PARA EL REGISTRO DE PERSONAS FÍSICAS O MORALES QUE PRESTEN SERVICIOS ESPECIALIZADOS O EJECUTEN OBRAS ESPECIALIZADAS A QUE SE REFIERE EL ARTICULO 15 DE LA LEY FEDERAL DEL TRABAJO, publicado en el Diario Oficial de la Federación el 24 de mayo de 2021y sus respectivos Acuerdos Modificatorios de fecha 03 de febrero de 2023 y 21 de febrero de 2024.</p>
+          <br></br>
+          <div className={styles.title}>
+            <p>AVISO DE RENOVACIóN DE REGISTRO</p>
+          </div>
+          <div className={styles.content}>
+            <p  className={styles.contentlabel}>Fundamento de la respuesta:</p>
+            <p className={styles.contenttext}>DÉCIMO, DÉCIMO SEGUNDO, DÉCIMO TERCERO, DÉCIMO QUINTO-B, DÉCIMO QUINTO-C y DÉCIMO NOVENO del ACUERDO POR EL QUE SE DAN A CONOCER LAS DISPOSIONES DE CARÁCTER GENERAL PARA EL REGISTRO DE PERSONAS FÍSICAS O MORALES QUE PRESTEN SERVICIOS ESPECIALIZADOS O EJECUTEN OBRAS ESPECIALIZADAS A QUE SE REFIERE EL ARTICULO 15 DE LA LEY FEDERAL DEL TRABAJO, publicado en el Diario Oficial de la Federación el 24 de mayo de 2021y sus respectivos Acuerdos Modificatorios de fecha 03 de febrero de 2023 y 21 de febrero de 2024.</p>
+          </div>
         </div>
       </div>
 
-      <div className={styles.footer}>
+      {/* <div className={styles.footer}>
         <table>
           <thead>
             <tr>
@@ -74,7 +84,7 @@ export default function Home() {
             </tr>
           </tbody>
         </table>
-      </div>
+      </div> */}
     </div>
   );
 }
