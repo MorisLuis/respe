@@ -1,6 +1,6 @@
-import styles from "../styles/Page.module.scss";
-import respelogos from '../public/respelogos.png';
-import trabajo from '../public/trabajo.png';
+import styles from "../../../styles/Page.module.scss";
+import respelogos from '../../../public/respelogos.png';
+import trabajo from '../../../public/trabajo.png';
 import Image from "next/image";
 
 export default function Home() {
