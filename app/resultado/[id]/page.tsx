@@ -2,6 +2,9 @@ import styles from "../../../styles/Page.module.scss";
 import respelogos from '../../../public/respelogos.png';
 import trabajo from '../../../public/trabajo.png';
 import Image from "next/image";
+/* 23 17 60*/
+
+/*17 60 23*/
 
 export default function Home() {
   return (
