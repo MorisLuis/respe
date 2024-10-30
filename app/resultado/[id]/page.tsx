@@ -45,7 +45,7 @@ export default function Home() {
 
           <div className={styles.item}>
             <p className={styles.label}>Fecha de respuesta:</p>
-            <p>2024-08-02</p>
+            <p>2024-10-23</p>
           </div>
 
           <div className={styles.item}>
